@@ -1,0 +1,56 @@
+[
+	{
+		"listing_id":1,
+		"used_new": 90,
+		"soft_firm": 80,
+		"ugly_cute":50
+	},
+	{
+		"listing_id":2,
+		"used_new": 80,
+		"soft_firm": 60,
+		"ugly_cute":60
+	},
+	{
+		"listing_id":3,
+		"used_new": 95,
+		"soft_firm": 80,
+		"ugly_cute":75
+	},
+	{
+		"listing_id":4,
+		"used_new": 95,
+		"soft_firm": 90,
+		"ugly_cute":80
+	},
+	{
+		"listing_id":5,
+		"used_new": 0,
+		"soft_firm": 80,
+		"ugly_cute":100
+	},
+	{
+		"listing_id":6,
+		"used_new": 60,
+		"soft_firm": 90,
+		"ugly_cute":20
+	},
+	{
+		"listing_id":7,
+		"used_new": 20,
+		"soft_firm": 20,
+		"ugly_cute":20
+	},
+	{
+		"listing_id":8,
+		"used_new": 30,
+		"soft_firm": 40,
+		"ugly_cute":70
+	},
+	{
+		"listing_id":9,
+		"used_new": 50,
+		"soft_firm": 100,
+		"ugly_cute":50
+	}
+]

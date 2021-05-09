@@ -1,11 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Article extends Model {}
+class Image extends Model {}
 
-Article.init(
+Image.init(
 	{
-		article_id: {
+		image_id: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			primaryKey: true,
@@ -13,26 +13,24 @@ Article.init(
 		},
 		title: {
 			type: DataTypes.STRING,
-			allowNull: false,
+			allowNull: true
 		},
-		content: {
-			type: DataTypes.TEXT,
+		description: {
+			type: DataTypes.STRING,
+			allowNull: true
 		},
-		user_id: {
-			type: DataTypes.INTEGER,
-			references: {
-				model: 'user',
-				key: 'user_id',
-			},
+		url: {
+			type: DataTypes.STRING,
+			allowNull: false
 		},
 	},
 	{
 		sequelize,
-		timestamps: true,
+		timestamps: false,
 		freezeTableName: true,
 		underscored: true,
-		modelName: 'article',
+		modelName: 'image',
 	}
 );
 
-module.exports = Article;
+module.exports = Image;

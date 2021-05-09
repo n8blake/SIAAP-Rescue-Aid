@@ -1,0 +1,29 @@
+[
+	{
+		"type":"Bear"
+	},
+	{
+		"type":"Bird"
+	},
+	{
+		"type":"Deer"
+	},
+	{
+		"type":"Crocodile"
+	},
+	{
+		"type":"Bunny"
+	},
+	{
+		"type":"Dog"
+	},
+	{
+		"type":"Cat"
+	},
+	{
+		"type":"Horse"
+	},
+	{
+		"type":"Lamb"
+	}
+]

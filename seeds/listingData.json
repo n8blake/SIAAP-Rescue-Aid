@@ -1,0 +1,98 @@
+[
+	{
+		"name":"Crocky",
+		"description":"A quirky little crocodile that just wants to hand out and go on adventures with you.",
+		"location":"Bremmmerton, WA",
+		"height":19.5,
+		"width":12.3,
+		"depth":7.0,
+		"weight":150,
+		"year":2019,
+		"image_id":1,
+		"rating_id":1,
+		"user_id":1
+	},
+	{
+		"name":"Chirpy",
+		"description":"A frienly blue bird with a coloful tummy.",
+		"location":"Bremmmerton, WA",
+		"height":8,
+		"width":8,
+		"depth":5,
+		"weight":30,
+		"year":2020,
+		"image_id":2,
+		"rating_id":2,
+		"user_id":1
+	},
+	{
+		"name":"Cinnamon Bear",
+		"description":"Cinnamon Bear is a little jolly holiday delight. He spreads christmas cheer all year with his little green scarf and red hand and toes. He's sure to warm your heart!",
+		"location":"Burien, WA",
+		"height":15,
+		"width":13,
+		"depth":10,
+		"weight":60,
+		"year":2015,
+		"image_id":3,
+		"rating_id":3,
+		"user_id":2
+	},
+	{
+		"name":"Randolf the Rednosed Reindeer",
+		"description":"Randolf has a bright red nose and warm red and white stripped scarff. He loves haning out and having christmas tea parties. He's also great with kids. He does a really good job sitting up.",
+		"location":"Burien, WA",
+		"height":29,
+		"width":18.2,
+		"depth":15.5,
+		"weight":160,
+		"year":2019,
+		"image_id":4,
+		"rating_id":4,
+		"user_id":2
+	},
+	{
+		"name":"Teddy",
+		"description":"Teddy was rescued from a high-throw-out second-hand store. He has the cutest smile and most loving cuddles to give. He must be saved! ",
+		"location":"Seattle, WA",
+		"image_id":5,
+		"rating_id":5,
+		"user_id":3
+	},
+	{
+		"name":"Kandy Birthday Princess",
+		"description":"She is THE LIFE of any birthday party. It is her pary though, and she will cry if she wants to. So don't piss her off. I needed to get her away from my daugher. She was a bad influence. But I'm sure you will love her.",
+		"location":"Bellvue, WA",
+		"year":2018,
+		"image_id":6,
+		"rating_id":6,
+		"user_id":4
+	},
+	{
+		"name":"Droopy Bear",
+		"description":"Droopy has been a constant companion to my son. Sadly my son grew up and left droopy at home, like the ungrateful brat he is. I can't believe I paid for that little shit's college and he doesn't even have the gaul to call on mother's day. Droppy is looking for a good home and someone to help him through his separation anxiety and abandonment issues. He probably needs therapy.",
+		"location":"Tacoma, WA",
+		"year":2005,
+		"image_id":7,
+		"rating_id":7,
+		"user_id":5
+	},
+	{
+		"name":"Bubble Gum and Cotton Candy",
+		"description":"BONDED PAIR! Bubble Gum and Cotton Candy are BOTH looking for a home TOGETHER. They are a wonderful lesbian lamb and teddy bear couple who are in need of a new home. They are open to living with other stuffed animals but would prefer to have a place to call thier own. They also like to have brunch. They are inseprable.",
+		"location":"Seattle, WA",
+		"image_id":8,
+		"rating_id":8,
+		"user_id":3
+	},
+	{
+		"name":"Hopsy Flopsy",
+		"description":"Hopsy Flopsy is a delightful, cuddly bunny. She loves story time and snuggling in bed. She does a great job looking after the other toys in the toy room and has a wonderfully calming demeanor. She is a wonderful addition to any child's nursury.",
+		"location":"Burien, WA",
+		"weight":180,
+		"year":2012,
+		"image_id":9,
+		"rating_id":9,
+		"user_id":2
+	},
+]
