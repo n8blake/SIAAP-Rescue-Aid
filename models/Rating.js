@@ -19,15 +19,15 @@ Rating.init(
 			},
 		},
 		used_new: {
-			type: DataType.DECIMAL,
+			type: DataTypes.DECIMAL,
 			allowNull: false,
 		},
 		soft_firm: {
-			type: DataType.DECIMAL,
+			type: DataTypes.DECIMAL,
 			allowNull: false,
 		},
 		ugly_cute: {
-			type: DataType.DECIMAL,
+			type: DataTypes.DECIMAL,
 			allowNull: false,
 		},
 	},

@@ -4,7 +4,10 @@
   "description": "SIAAP Website dedicated to the aid and rescue of stuffed animals.",
   "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
@@ -26,9 +29,11 @@
   },
   "homepage": "https://github.com/n8blake/SIAAP-Rescue-Aid#readme",
   "devDependencies": {
-    "jest": "^26.5.0"
+    "jest": "^26.5.0",
+    "nodemon": "^2.0.7"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "dotenv": "^9.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.1",

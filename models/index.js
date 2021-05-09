@@ -3,28 +3,36 @@ const Listing = require('./Listing');
 const ListingType = require('./ListingType');
 const Rating = require('./Rating');
 const Type = require('./Type');
-const Image = require('.Image');
+const Image = require('./Image');
 
-User.hasMany(Article, {
+User.hasMany(Listing, {
 	foreignKey: 'user_id',
 	onDelete: 'CASCADE'
 });
 
-User.hasMany(Comment, {
-	foreignKey: 'user_id',
+Image.belongsTo(Listing, {
+	foreignKey: 'image_id',
 	onDelete: 'CASCADE'
 });
 
-Article.belongsTo(User, {
-	foreignKey: 'user_id'
+Listing.hasOne(Rating, {
+	foreignKey: 'rating_id'
 });
 
-Comment.belongsTo(Article, {
-	foreignKey: 'article_id'
+// Listing belongToMany Types (through ListingType)
+Listing.belongsToMany(Type, {
+	through: 'listing_type',
+	foreignKey:'listing_id'
 });
 
-Comment.belongsTo(User, {
-	foreignKey: 'user_id'
+// Type belongToMany Listing (through ListingType)
+Type.belongsToMany(Listing, {
+	through: 'listing_type',
+	foreignKey:'type_id'
 });
 
-module.exports = { User, Article, Comment };
+Rating.belongsTo(Listing, {
+	foreignKey: 'listing_id'
+});
+
+module.exports = { User, Listing, ListingType, Rating, Type, Image };
