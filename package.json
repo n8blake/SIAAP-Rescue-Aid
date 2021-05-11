@@ -34,10 +34,15 @@
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
     "dotenv": "^9.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.1",
+    "express-session": "^1.17.1",
+    "multer": "^1.4.2",
+    "multer-sftp": "^1.1.1",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.6.2"
+    "sequelize": "^6.6.2",
+    "ssh2-sftp-client": "^6.0.1"
   }
 }

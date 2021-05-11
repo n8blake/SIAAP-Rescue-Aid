@@ -19,6 +19,14 @@ Listing.hasOne(Rating, {
 	foreignKey: 'rating_id'
 });
 
+Listing.hasOne(Image, {
+	foreignKey: 'image_id'
+});
+
+Listing.belongsTo(User, {
+	foreignKey: 'user_id'
+});
+
 // Listing belongToMany Types (through ListingType)
 Listing.belongsToMany(Type, {
 	through: 'listing_type',
