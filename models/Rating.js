@@ -17,6 +17,7 @@ Rating.init(
 				model: 'listing',
 				key: 'listing_id',
 			},
+			allowNull: false
 		},
 		used_new: {
 			type: DataTypes.DECIMAL,

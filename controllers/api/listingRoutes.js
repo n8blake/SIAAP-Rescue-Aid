@@ -77,14 +77,81 @@ router.get('/:id', async (request, response) => {
 
 });
 
-
 router.post('/', async (request, response) => {
 
 	// post a new listing
+	/*
+		expect body to look like:
+		{
+			"name":"myName",
+			"description":"My listing description",
+			"location":"My Listing, Location",
+			"height":"0",
+			...
+			"user_id":"userid",
+			"image"{
+				"title":"My Image Title",
+				"description":'My Image description',
+				"image_url":"my.image.url/image"
+			}
+			"rating":{
+				"new_used":1,
+				"soft_firm":2,
+				"ugly_cute":2
+			},
+			"types":[
+				"myType1",
+				"myType2"
+			]
+		}
+	*/
 	try {
-
+		Listing.create(request.body).then(async listing => {
+			try {
+				if(request.body.types && request.body.types.length){
+					const typesIdArray = [];
+					await request.body.types.forEach(async _type => {
+						// query for the type
+						let type = await Type.findOne({where: {type: _type}});
+						if(!type){
+							//create a new type
+							type = await Type.create({type: _type});
+						}
+						typesIdArray.push(type.type_id);
+					});
+				}
+				if(request.body.rating){
+					// create a rating
+					request.body.rating.listing_id = listing.listing_id;
+					const rating = await Rating.create(request.body.rating);
+					if(rating.rating_id){
+						// update the image id in Lisitng
+						await Listing.update({rating_id: rating.rating_id}, { where: {
+							listing_id: listing.listing_id }
+						});
+					}
+				}
+				if(request.body.image){
+					// create an image
+					const image = await Image.create(request.body.image);
+					if(image.image_id){
+						// update the image id in Lisitng
+						await Listing.update({image_id: image.image_id}, { where: {
+							listing_id: listing.listing_id }
+						});
+					}
+				}
+				if(listing){
+					response.status(200).json(listing);
+				} else {
+					response.status(400);
+				}
+			} catch (error) {
+				response.status(400).json(error);
+			}
+		});
 	} catch (error) {
-		response.status(400).
+		response.status(400).json(error);
 	}
 
 });
@@ -92,13 +159,21 @@ router.post('/', async (request, response) => {
 router.put('/:id', async (request, response) => {
 
 	// update a listing by id
-
+	try {
+		
+	} catch (error) {
+		response.status(400).json(error);
+	}
 });
 
 router.delete('/:id', async (request, response) => {
 
 	// delete a listing by id
-
+	try {
+		
+	} catch (error) {
+		response.status(400).json(error);
+	}
 });
 
 module.exports = router;

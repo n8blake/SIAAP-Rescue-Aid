@@ -67,6 +67,7 @@ Listing.init(
 				model: 'user',
 				key: 'user_id',
 			},
+			allowNull: false
 		},
 	},
 	{
