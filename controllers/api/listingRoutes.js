@@ -59,13 +59,21 @@ router.get('/', async (request, response) => {
 });
 
 router.get('/:id', async (request, response) => {
+	try {
+		// get a listinging by its id
+		const listing = await Listing.findByPk(request.params.id, listingQueryConfig).catch((error) => {
+			response.json(error);
+		});
+		if(listing){
+			response.json(listing);	
+		} else {
+			response.status(404);
+		}
+	} catch (error) {
+		console.log(error);
+		response.status(500);
+	}
 	
-	// get a listinging by its id
-	const listing = await Listing.findByPk(request.params.id, listingQueryConfig).catch((error) => {
-		response.json(error);
-	});
-
-	response.json(listing);
 
 });
 
