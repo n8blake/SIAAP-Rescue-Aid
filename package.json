@@ -1,0 +1,48 @@
+{
+  "name": "siaap-rescue-aid",
+  "version": "1.0.0",
+  "description": "SIAAP Website dedicated to the aid and rescue of stuffed animals.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n8blake/SIAAP-Rescue-Aid.git"
+  },
+  "keywords": [
+    "aid",
+    "stuffed",
+    "animals",
+    "rescue",
+    "donation",
+    "doge",
+    "SIAAP"
+  ],
+  "author": "n8blake",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n8blake/SIAAP-Rescue-Aid/issues"
+  },
+  "homepage": "https://github.com/n8blake/SIAAP-Rescue-Aid#readme",
+  "devDependencies": {
+    "jest": "^26.5.0",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.1",
+    "express-session": "^1.17.1",
+    "multer": "^1.4.2",
+    "multer-sftp": "^1.1.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2",
+    "ssh2-sftp-client": "^6.0.1"
+  }
+}

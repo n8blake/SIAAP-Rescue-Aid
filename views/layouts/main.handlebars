@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stuffed Animal Rescue Aid Societe</title>
+	<link rel="stylesheet" href="/css/jass.css">
+	<link rel="stylesheet" href="https://use.typekit.net/nub2aux.css">
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+	<header class="display-flex justify-space-between align-center p-2">
+		<p><i>They were there for you...</i></p>
+		<img src="/assets/logo-1-en.svg" width="100" height="100" />
+		<p><i>Now be there for them.</i></p>
+		{{#if logged_in}}
+		<nav>
+			<button class="btn" id="logout">logout</button>
+		</nav>
+		{{/if}}
+	</header>
+	<main class="container container-fluid mt-5">
+		{{{ body }}}
+	</main>
+	<footer>
+			
+	</footer>
+
+	{{#if logged_in}}
+	<script src="/js/logout.js"></script>
+	{{/if}}
+</body>
+
+</html>
