@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Listing, User, Rating, Type, ListingType, Image } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 const listingQueryConfig = {
 		attributes: [ 
@@ -170,7 +171,13 @@ router.put('/:id', async (request, response) => {
 		})
 		.then((existinglistingTypes) => {
 			const listingTypes = existinglistingTypes.map(({type}) => type);
-			const newListingTypes = request.body.types;
+			// the request.body has types (names) not type_ids
+			const newListingTypes = request.body.types.filter(type => !listingTypes.includes(type))
+			.map(type => {
+				return {
+
+				}
+			})
 
 		})
 

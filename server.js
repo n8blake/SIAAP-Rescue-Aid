@@ -11,7 +11,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-//const handlebars = exphbs.creat({helpers});
+const handlebars = exphbs.create();
 
 const sessionConfig = {
 	secret: process.env.SESSION_SECRET,
@@ -25,8 +25,8 @@ const sessionConfig = {
 
 app.use(session(sessionConfig));
 
-//app.engine('handlebars' handlebars.engine);
-//app.set('view engine', 'handlebars');
+app.engine('handlebars', handlebars.engine);
+app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
