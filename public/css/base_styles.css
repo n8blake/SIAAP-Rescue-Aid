@@ -10346,8 +10346,8 @@ body {
 }
 
 .listing-image {
-  width: 200pt;
-  height: 200pt;
+  max-width: 200pt;
+  max-height: 200pt;
   float: left;
   margin-right: 20pt;
   border-radius: 0.2rem;

@@ -11,8 +11,10 @@
 		</div>
 		<div class="card-body">
 			<div class="container-fluid">
+				
 				<img class="col listing-image" src="{{listing.image.url}}" alt="{{listing.image.description}}"/>
-				<p class="">{{listing.description}}</p>
+				
+				<p class="col">{{listing.description}}</p>
 			</div>
 		</div>
 	</div>
@@ -21,9 +23,10 @@
 	<h3>Edit Listing: </h3>
 	<!-- height, width, depth, year-->
 	<br>
-	<form>
+	<form id="update-form">
+		<input type="text" style="display: none;" id="listing_id" name="listing" value="{{listing.listing_id}}" disabled="true">
 		<div class="mb-3">
-			<label for="name" class="form-label">Title <small class="text-secondary">(required)</small></label>
+			<label for="name" class="form-label">Name <small class="text-secondary">(required)</small></label>
 			<input type="text" class="form-control" id="name" name="name" value="{{listing.name}}">
 		</div>
 		<div class="mb-3">
@@ -31,7 +34,7 @@
 			<textarea class="form-control" id="description" rows="5" name="description">{{listing.description}}</textarea>
 		</div>
 		<div class="mb-3">
-			<label for="location" class="form-label">Location <small class="text-secondary">(required)</small></label>
+			<label for="location" class="form-label"><i class="bi bi-geo-alt-fill"></i> Location <small class="text-secondary">(required)</small></label>
 			<input type="text" class="form-control" id="location" name="location" value="{{listing.location}}">
 		</div>
 		<div class="mb-3">
@@ -39,22 +42,31 @@
 			<input type="text" class="form-control" id="image" name="image" value="{{listing.image.url}}">
 		</div>
 		<div class="mb-3">
-			<label for="location" class="form-label">Weight</label>
+			<label for="location" class="form-label">Weight <small class="text-secondary">(grams)</small></label>
 			<input type="text" class="form-control" id="weight" name="weight" value="{{listing.weight}}">
 		</div>
 		<div class="mb-3">
-			<label for="height" class="form-label">Height</label>
+			<label for="height" class="form-label">Height <small class="text-secondary">(cm)</small></label>
 			<input type="text" class="form-control" id="height" name="height" value="{{listing.height}}">
 		</div>
 		<div class="mb-3">
-			<label for="location" class="form-label">Width</label>
+			<label for="location" class="form-label">Width <small class="text-secondary">(cm)</small></label>
 			<input type="text" class="form-control" id="width" name="width" value="{{listing.width}}">
 		</div>
 		<div class="mb-3">
-			<label for="location" class="form-label">Depth</label>
+			<label for="location" class="form-label">Depth <small class="text-secondary">(cm)</small></label>
 			<input type="text" class="form-control" id="depth" name="depth" value="{{listing.depth}}">
 		</div>
-		<button type="submit" class="btn btn-outline-warning" >Update</button>
+		<div class="d-flex justify-content-center">
+			<button type="submit" class="btn btn-lg btn-block btn-outline-warning mx-2" >Update Listing</button>
+			<button type="button"
+		id="delete-listing-btn" class="btn btn-lg btn-block btn-outline-danger mx-2" >Remove Listing</button>
+		</div>
 	</form>
+	<script src="/js/update.js"></script>
+	{{else}}
+	<div class="d-flex justify-content-center my-4">
+		<a class="btn btn-block btn-outline-primary" href="mailto:{{listing.user.email}}?subject=Adoption%20of%20{{listing.name}}">Rescue {{listing.name}}!</a>
+	</div>
 	{{/if}}
 </div>

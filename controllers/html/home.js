@@ -42,7 +42,7 @@ const listingQueryConfig = {
 				]
 			}
 		],
-		order: [['name', 'ASC']]
+		order: [['createdAt', 'ASC']]
 	};
 
 router.get('/', async (request, response) => {
