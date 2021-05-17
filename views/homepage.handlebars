@@ -1,13 +1,21 @@
 {{#each listings as |listing| }}
-<div class="row align-center mb-5">
+<div class="listing-container mb-4">
+	
 	<div class="card">
 		<div class="card-header">
 			<h2>{{listing.name}}</h2>
+			<small class="location"><i class="bi bi-geo-alt-fill"></i> {{listing.location}}</small>
 		</div>
 		<div class="card-body">
-			<p>{{listing.description}}</p>
+			<div class="container-fluid">
+				<img class="col listing-image" src="{{listing.image.url}}" alt="{{listing.image.description}}"/>
+				<p class="">{{listing.description}}</p>
+			</div>
+		</div>
+		<div class="mb-4 d-flex justify-content-center">
+			<a class="btn btn-outline-primary" href="/listing/{{listing.listing_id}}">View</a>
 		</div>
 	</div>
+	
 </div>
 {{/each}}
-<div>Home page stuff!</div>

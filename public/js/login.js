@@ -12,8 +12,9 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/');
+      document.location.replace(window.location.pathname);
     } else {
+      console.log(response.message);
       alert('Failed to log in');
     }
   }

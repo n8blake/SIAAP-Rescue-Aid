@@ -1,0 +1,37 @@
+$theme-colors: (
+	"primary": #5E1F2A,
+	"danger":#AD2100,
+	"warning":#EDA006,
+	"secondary":#6B595D
+);
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://use.typekit.net/nub2aux.css");
+body {
+	font-family: brandon-grotesque, sans-serif;
+	font-weight: 400;	
+	font-style: normal;
+}
+
+.listing-container {
+
+}
+
+.listing-image {
+	max-width: 200pt;
+	max-height: 200pt;
+	float: left;
+	margin-right: 20pt;
+	border-radius: .2rem;
+}
+
+.location {
+	color: #888;
+}
+
+.header-text {
+	position: relative;
+	top: 50%;
+	transform: translateY(25%);
+}
