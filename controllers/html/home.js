@@ -55,6 +55,7 @@ router.get('/', async (request, response) => {
 		response.render('homepage', {
 			listings,
 			logged_in: request.session.logged_in,
+			user_name: request.session.user_name
 		});
 
 	} catch (error) {

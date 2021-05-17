@@ -11,10 +11,34 @@
 		</div>
 		<div class="card-body">
 			<div class="container-fluid">
-				
+				<div class="row">
 				<img class="col listing-image" src="{{listing.image.url}}" alt="{{listing.image.description}}"/>
 				
-				<p class="col">{{listing.description}}</p>
+				<div class="col">
+					<p>{{listing.description}}</p>
+					<table class="table table-sm">
+						<thead>
+							<tr><th></th><th></th></tr>
+						</thead>
+						{{#if listing.weight}}
+						<tr><td>Weight</td><td>{{listing.weight}} g</td></tr>
+						{{/if}}
+						{{#if listing.height}}
+						<tr><td>Height</td><td>{{listing.height}} cm</td></tr>
+						{{/if}}
+						{{#if listing.width}}
+						<tr><td>Width</td><td>{{listing.width}} cm</td></tr>
+						{{/if}}
+						{{#if listing.depth}}
+						<tr><td>Depth</td><td>{{listing.depth}} cm</td></tr>
+						{{/if}}
+						{{#if listing.year}}
+						<tr><td>Year</td><td>{{listing.year}}</td></tr>
+						{{/if}}
+
+					</table>
+				</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -50,12 +74,16 @@
 			<input type="text" class="form-control" id="height" name="height" value="{{listing.height}}">
 		</div>
 		<div class="mb-3">
-			<label for="location" class="form-label">Width <small class="text-secondary">(cm)</small></label>
+			<label for="width" class="form-label">Width <small class="text-secondary">(cm)</small></label>
 			<input type="text" class="form-control" id="width" name="width" value="{{listing.width}}">
 		</div>
 		<div class="mb-3">
-			<label for="location" class="form-label">Depth <small class="text-secondary">(cm)</small></label>
+			<label for="depth" class="form-label">Depth <small class="text-secondary">(cm)</small></label>
 			<input type="text" class="form-control" id="depth" name="depth" value="{{listing.depth}}">
+		</div>
+		<div class="mb-3">
+			<label for="year" class="form-label">Year</label>
+			<input type="text" class="form-control" id="year" name="year" value="{{listing.year}}">
 		</div>
 		<div class="d-flex justify-content-center">
 			<button type="submit" class="btn btn-lg btn-block btn-outline-warning mx-2" >Update Listing</button>

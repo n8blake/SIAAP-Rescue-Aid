@@ -39,7 +39,10 @@
 			© 2021 <a class="text-secondary" style="text-decoration: none" href="https://n8blake.com">n8blake</a>
 		</div>
 		{{#if logged_in}}
-		<button class="btn btn-sm btn-outline-secondary m-4" id="logout" >logout</button>
+		<div>
+			<small class="m-2 text-secondary">Logged in as {{user_name}}</small>
+			<button class="btn btn-sm btn-outline-secondary m-4" id="logout" >logout</button>
+		</div>
 		{{/if}}	
 	</footer>
 
@@ -53,6 +56,10 @@
       </div>
       <div class="modal-body">
         <form>
+        	<div class="mb-3" id="new-user-field-user-name">
+			  <label for="username-login" class="form-label">User Name</label>
+			  <input type="text" class="form-control" id="username-login" placeholder="username">
+			</div>
         	<div class="mb-3">
 			  <label for="email-login" class="form-label">Email address</label>
 			  <input type="email" class="form-control" id="email-login" placeholder="name@example.com">
@@ -60,6 +67,13 @@
 			<div class="mb-3">
 			  <label for="password" class="form-label">Password</label>
 			  <input type="password" class="form-control" id="password-login" placeholder="password">
+			</div>
+			<div class="mb-3" id="new-user-field-validate-password">
+			  <label for="password-verification" class="form-label">Retype Password</label>
+			  <input type="password" class="form-control" id="password-verification" placeholder="retype password">
+			</div>
+			<div class="mb-3" id="error-message-container" style="display: none;">
+				<p class="text-danger" id="error-message"></p>
 			</div>
         </form>
       </div>

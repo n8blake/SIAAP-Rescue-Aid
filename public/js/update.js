@@ -16,6 +16,7 @@ const updateFormHandler = async (event) => {
 	const height = preflightValidation(document.querySelector('#height').value.trim());
 	const width = preflightValidation(document.querySelector('#width').value.trim());
 	const depth = preflightValidation(document.querySelector('#depth').value.trim());
+	const year = preflightValidation(document.querySelector('#year').value.trim());	
 	const listing_id = document.querySelector('#listing_id').value.trim();
 	
 
@@ -35,7 +36,8 @@ const updateFormHandler = async (event) => {
 					weight,
 					height,
 					width,
-					depth
+					depth,
+					year
 				}),
 				headers: { 'Content-Type': 'application/json' },
 			});
