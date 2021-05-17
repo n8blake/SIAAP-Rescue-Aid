@@ -1,0 +1,60 @@
+<div class="listing-container mb-4">
+	{{#if users_listing}}
+	<h3 >
+		Current Listing:
+	</h3>	
+	{{/if}}
+	<div class="card">
+		<div class="card-header">
+			<h2>{{listing.name}}</h2>
+			<small class="location"><i class="bi bi-geo-alt-fill"></i> {{listing.location}}</small>
+		</div>
+		<div class="card-body">
+			<div class="container-fluid">
+				<img class="col listing-image" src="{{listing.image.url}}" alt="{{listing.image.description}}"/>
+				<p class="">{{listing.description}}</p>
+			</div>
+		</div>
+	</div>
+	{{#if users_listing}}
+	<br><br>
+	<h3>Edit Listing: </h3>
+	<!-- height, width, depth, year-->
+	<br>
+	<form>
+		<div class="mb-3">
+			<label for="name" class="form-label">Title <small class="text-secondary">(required)</small></label>
+			<input type="text" class="form-control" id="name" name="name" value="{{listing.name}}">
+		</div>
+		<div class="mb-3">
+			<label for="description" class="form-label">Description <small class="text-secondary">(required)</small></label>
+			<textarea class="form-control" id="description" rows="5" name="description">{{listing.description}}</textarea>
+		</div>
+		<div class="mb-3">
+			<label for="location" class="form-label">Location <small class="text-secondary">(required)</small></label>
+			<input type="text" class="form-control" id="location" name="location" value="{{listing.location}}">
+		</div>
+		<div class="mb-3">
+			<label for="image" class="form-label">Image URL <small class="text-secondary">(required)</small></label>
+			<input type="text" class="form-control" id="image" name="image" value="{{listing.image.url}}">
+		</div>
+		<div class="mb-3">
+			<label for="location" class="form-label">Weight</label>
+			<input type="text" class="form-control" id="weight" name="weight" value="{{listing.weight}}">
+		</div>
+		<div class="mb-3">
+			<label for="height" class="form-label">Height</label>
+			<input type="text" class="form-control" id="height" name="height" value="{{listing.height}}">
+		</div>
+		<div class="mb-3">
+			<label for="location" class="form-label">Width</label>
+			<input type="text" class="form-control" id="width" name="width" value="{{listing.width}}">
+		</div>
+		<div class="mb-3">
+			<label for="location" class="form-label">Depth</label>
+			<input type="text" class="form-control" id="depth" name="depth" value="{{listing.depth}}">
+		</div>
+		<button type="submit" class="btn btn-outline-warning" >Update</button>
+	</form>
+	{{/if}}
+</div>
