@@ -11,10 +11,34 @@
 		</div>
 		<div class="card-body">
 			<div class="container-fluid">
-				
+				<div class="row">
 				<img class="col listing-image" src="{{listing.image.url}}" alt="{{listing.image.description}}"/>
 				
-				<p class="col">{{listing.description}}</p>
+				<div class="col">
+					<p>{{listing.description}}</p>
+					<table class="table table-sm">
+						<thead>
+							<tr><th></th><th></th></tr>
+						</thead>
+						{{#if listing.weight}}
+						<tr><td>Weight</td><td>{{listing.weight}} g</td></tr>
+						{{/if}}
+						{{#if listing.height}}
+						<tr><td>Height</td><td>{{listing.height}} cm</td></tr>
+						{{/if}}
+						{{#if listing.width}}
+						<tr><td>Width</td><td>{{listing.width}} cm</td></tr>
+						{{/if}}
+						{{#if listing.depth}}
+						<tr><td>Depth</td><td>{{listing.depth}} cm</td></tr>
+						{{/if}}
+						{{#if listing.year}}
+						<tr><td>Year</td><td>{{listing.year}}</td></tr>
+						{{/if}}
+
+					</table>
+				</div>
+				</div>
 			</div>
 		</div>
 	</div>

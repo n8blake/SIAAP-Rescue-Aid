@@ -1,7 +1,7 @@
 [
 	{
 		"name":"Crocky",
-		"description":"A quirky little crocodile that just wants to hand out and go on adventures with you.",
+		"description":"A quirky little crocodile that just wants to hang out and go on adventures with you.",
 		"location":"Bremmmerton, WA",
 		"height":19.5,
 		"width":12.3,
@@ -14,7 +14,7 @@
 	},
 	{
 		"name":"Chirpy",
-		"description":"A frienly blue bird with a coloful tummy.",
+		"description":"A friendly blue bird with a coloful tummy.",
 		"location":"Bremmmerton, WA",
 		"height":8,
 		"width":8,
@@ -27,7 +27,7 @@
 	},
 	{
 		"name":"Cinnamon Bear",
-		"description":"Cinnamon Bear is a little jolly holiday delight. He spreads christmas cheer all year with his little green scarf and red hand and toes. He's sure to warm your heart!",
+		"description":"Cinnamon Bear is a little jolly holiday delight. He spreads christmas cheer all year with his little green scarf and red hands and toes. He's sure to warm your heart!",
 		"location":"Burien, WA",
 		"height":15,
 		"width":13,
@@ -36,11 +36,11 @@
 		"year":2015,
 		"image_id":3,
 		"rating_id":3,
-		"user_id":2
+		"user_id":1
 	},
 	{
 		"name":"Randolf the Rednosed Reindeer",
-		"description":"Randolf has a bright red nose and warm red and white stripped scarff. He loves haning out and having christmas tea parties. He's also great with kids. He does a really good job sitting up.",
+		"description":"Randolf has a bright red nose and warm red and white stripped scarff. He loves hanging out and having christmas tea parties. He's also great with kids. He does a really good job sitting up.",
 		"location":"Burien, WA",
 		"height":29,
 		"width":18.2,
@@ -49,7 +49,7 @@
 		"year":2019,
 		"image_id":4,
 		"rating_id":4,
-		"user_id":2
+		"user_id":1
 	},
 	{
 		"name":"Teddy",
@@ -57,25 +57,25 @@
 		"location":"Seattle, WA",
 		"image_id":5,
 		"rating_id":5,
-		"user_id":3
+		"user_id":1
 	},
 	{
 		"name":"Kandy Birthday Princess",
-		"description":"She is THE LIFE of any birthday party. It is her pary though, and she will cry if she wants to. So don't piss her off. I needed to get her away from my daugher. She was a bad influence. But I'm sure you will love her.",
+		"description":"She is THE LIFE of any birthday party. It is her party though, and she will cry if she wants to. So don't piss her off. I needed to get her away from my daugher. She was a bad influence. But I'm sure you will love her.",
 		"location":"Bellvue, WA",
 		"year":2018,
 		"image_id":6,
 		"rating_id":6,
-		"user_id":4
+		"user_id":1
 	},
 	{
 		"name":"Droopy Bear",
-		"description":"Droopy has been a constant companion to my son. Sadly my son grew up and left droopy at home, like the ungrateful brat he is. I can't believe I paid for that little shit's college and he doesn't even have the gaul to call on mother's day. Droppy is looking for a good home and someone to help him through his separation anxiety and abandonment issues. He probably needs therapy.",
+		"description":"Droopy has been a constant companion to my son. Sadly my son grew up and left Droopy at home, like the ungrateful brat he is. I can't believe I paid for that little shit's college and he doesn't even have the gaul to call on mother's day. Droppy is looking for a good home and someone to help him through his separation anxiety and abandonment issues. He probably needs therapy.",
 		"location":"Tacoma, WA",
 		"year":2005,
 		"image_id":7,
 		"rating_id":7,
-		"user_id":5
+		"user_id":1
 	},
 	{
 		"name":"Bubble Gum and Cotton Candy",
@@ -83,7 +83,7 @@
 		"location":"Seattle, WA",
 		"image_id":8,
 		"rating_id":8,
-		"user_id":3
+		"user_id":1
 	},
 	{
 		"name":"Hopsy Flopsy",
@@ -93,6 +93,6 @@
 		"year":2012,
 		"image_id":9,
 		"rating_id":9,
-		"user_id":2
+		"user_id":1
 	}
 ]

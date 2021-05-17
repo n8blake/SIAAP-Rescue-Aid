@@ -51,6 +51,7 @@ router.get('/new', withAuth, async (request, response) => {
 		response.render('new', {
 			logged_in: request.session.logged_in,
 			user_id: request.session.user_id,
+			user_name: request.session.user_name,
 			hide_new_button: true
 		});
 	} catch(error) {
@@ -77,6 +78,7 @@ router.get('/:id', async (request, response) => {
 				response.render('listing', {
 					listing,
 					user_id: request.session.user_id,
+					user_name: request.session.user_name,
 					users_listing: users_listing,
 					logged_in: request.session.logged_in,
 				});
