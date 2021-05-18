@@ -12,10 +12,11 @@
 		<div class="card-body">
 			<div class="container-fluid">
 				<div class="row">
-				<img class="col listing-image" src="{{listing.image.url}}" alt="{{listing.image.description}}"/>
-				
+				<div class="col d-flex justify-content-center">
+					<img class="listing-image" src="{{listing.image.url}}" alt="{{listing.image.description}}"/>
+				</div>
 				<div class="col">
-					<p>{{listing.description}}</p>
+					<p class="m-2">{{listing.description}}</p>
 					<table class="table table-sm">
 						<thead>
 							<tr><th></th><th></th></tr>

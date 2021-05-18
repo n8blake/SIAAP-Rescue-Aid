@@ -14,15 +14,15 @@ body {
 	font-style: normal;
 }
 
-.listing-container {
-
+.listing-container{
+	
 }
 
 .listing-image {
 	max-width: 200pt;
 	max-height: 200pt;
 	float: left;
-	margin-right: 20pt;
+	margin: auto;
 	border-radius: .2rem;
 }
 
@@ -32,6 +32,13 @@ body {
 
 .header-text {
 	position: relative;
+	
+}
+
+.header-text>p {
+	text-align: center;
+	vertical-align: center;
 	top: 50%;
 	transform: translateY(25%);
+	padding: 10pt;
 }

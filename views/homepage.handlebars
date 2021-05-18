@@ -8,8 +8,12 @@
 		</div>
 		<div class="card-body">
 			<div class="container-fluid">
-				<img class="col listing-image" src="{{listing.image.url}}" alt="{{listing.image.description}}"/>
-				<p class="">{{listing.description}}</p>
+				<div class="row">
+				<div class="col d-flex justify-content-center mb-4">
+					<img class="listing-image" src="{{listing.image.url}}" alt="{{listing.image.description}}"/>
+				</div>
+				<p class="col">{{listing.description}}</p>
+				</div>
 			</div>
 		</div>
 		<div class="mb-4 d-flex justify-content-center">
